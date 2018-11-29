@@ -272,11 +272,11 @@ public class RowBot
         }
         else if (whichResponse == 4)
         {
-            response = "Say something useful please";
+            response = "Say something useful please.";
         }
         else if (whichResponse == 5)
         {
-            response = "I would never know";
+            response = "I would never know or care but thanks.";
         }
         return response;
     }
