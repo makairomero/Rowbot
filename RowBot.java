@@ -2,7 +2,7 @@
  * This is where I will list some things so please help me with them.
  * 
  */
-public class Magpie4
+public class RowBot
 {
 	/**
 	 * Get a default greeting 	
