@@ -9,7 +9,7 @@ public class RowBotRunner
     {
         int a = 0;
         String same = ""; 
-        while(a == 0){
+        
         
         RowBot maggie = new RowBot();
         
@@ -17,7 +17,7 @@ public class RowBotRunner
         
         Scanner in = new Scanner (System.in);
         String statement = in.nextLine();
-        
+        while(a == 0){
         if  (statement.equals("Bye"))
         {System.out.println("Ok bye");
             break;
