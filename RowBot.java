@@ -1,6 +1,9 @@
 /**
  * This is where I will list some things so please help me with them.
  * 
+ * Should this bot react to crude words?
+ * Possibly math stuff.
+ * New keyword finders.
  */
 public class RowBot
 {
