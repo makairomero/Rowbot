@@ -27,8 +27,8 @@ public class RowBot
         {
             response = "Stop repeating yourself.";
         }
-        a= statement;
-        if (statement.length() == 0)
+       
+        else if (statement.length() == 0)
         {
             response = "Say something, please.";
         }
@@ -76,6 +76,7 @@ public class RowBot
                 response = getRandomResponse();
             }
         }
+        a= statement;
         return response;
     }
 
