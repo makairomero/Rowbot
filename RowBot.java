@@ -4,6 +4,7 @@
  * Should this bot react to crude words?
  * Possibly math stuff.
  * New keyword finders.
+ * How about a little trivia?
  */
 public class RowBot
 {
