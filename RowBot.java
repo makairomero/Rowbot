@@ -27,6 +27,7 @@ public class RowBot
         {
             response = "Stop repeating yourself.";
         }
+        a= statement;
         if (statement.length() == 0)
         {
             response = "Say something, please.";
