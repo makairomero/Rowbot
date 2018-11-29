@@ -5,14 +5,14 @@
 public class RowBot
 {
     /**
-     * Get a default greeting 	
+     * Get a default greeting   
      * @return a greeting
-     */	
+     */ 
     public String getGreeting()
     {
         return "Hello, let's talk.";
     }
-
+    String a;
     /**
      * Gives a response to a user statement
      * 
@@ -23,6 +23,10 @@ public class RowBot
     public String getResponse(String statement)
     {
         String response = "";
+        if (statement == a )
+        {
+            response = "Stop repeating yourself.";
+        }
         if (statement.length() == 0)
         {
             response = "Say something, please.";
@@ -156,7 +160,7 @@ public class RowBot
         return "Why do you " + restOfStatement + " me?";
     }
 
-	
+    
     /**
      * Search for one word in phrase. The search is not case
      * sensitive. This method will check that the given goal
