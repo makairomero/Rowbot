@@ -8,16 +8,17 @@ public class RowBotRunner
     public static void main(String[] args)
     {
         int a = 0;
+        while(a == 0){
         String same = ""; 
         RowBot maggie = new RowBot();
         
         System.out.println (maggie.getGreeting());
-        while(a == 0){
+        
         Scanner in = new Scanner (System.in);
         String statement = in.nextLine();
         
         if  (statement.equals("Bye"))
-        {System.out.println("Bye");
+        {System.out.println("Ok bye");
             break;
         }
             System.out.println (maggie.getResponse(statement, same));
@@ -25,7 +26,7 @@ public class RowBotRunner
             same = statement;
         
         }
-        System.out.println("Ok bye.");
+        
     
     }
 }
