@@ -1,14 +1,6 @@
 /**
- * A program to carry on conversations with a human user.
- * This version:
- *<ul><li>
- * 		Uses advanced search for keywords 
- *</li><li>
- * 		Will transform statements as well as react to keywords
- *</li></ul>
- * @author Laurie White
- * @version April 2012
- *
+ * This is where I will list some things so please help me with them.
+ * 
  */
 public class Magpie4
 {
