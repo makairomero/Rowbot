@@ -8,8 +8,9 @@ public class RowBotRunner
     public static void main(String[] args)
     {
         int a = 0;
-        while(a == 0){
         String same = ""; 
+        while(a == 0){
+        
         RowBot maggie = new RowBot();
         
         System.out.println (maggie.getGreeting());
