@@ -16,7 +16,6 @@ public class RowBot
     {
         return "Hello, let's talk.";
     }
-    String a;
     /**
      * Gives a response to a user statement
      * 
@@ -80,7 +79,6 @@ public class RowBot
                 response = getRandomResponse();
             }
         }
-        a= statement;
         return response;
     }
 
