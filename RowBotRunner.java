@@ -5,10 +5,6 @@ import java.util.Scanner;
  */
 public class RowBotRunner
 {
-
-	/**
-	 * Create a Magpie, give it user input, and print its replies.
-	 */
 	public static void main(String[] args)
 	{
 		RowBot maggie = new RowBot();
@@ -22,6 +18,8 @@ public class RowBotRunner
 			System.out.println (maggie.getResponse(statement));
 			statement = in.nextLine();
 		}
+		
+		System.out.println("Ok bye.");
 	}
 
 }
