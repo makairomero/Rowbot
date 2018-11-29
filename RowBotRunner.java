@@ -1,9 +1,7 @@
 import java.util.Scanner;
 
 /**
- * A simple class to run the Magpie class.
- * @author Laurie White
- * @version April 2012
+ *
  */
 public class RowBotRunner
 {
@@ -13,7 +11,7 @@ public class RowBotRunner
 	 */
 	public static void main(String[] args)
 	{
-		Magpie4 maggie = new Magpie4();
+		RowBot maggie = new RowBot();
 		
 		System.out.println (maggie.getGreeting());
 		Scanner in = new Scanner (System.in);
