@@ -23,15 +23,11 @@ public class RowBot
      *            the user statement
      * @return a response based on the rules given
      */
-    public String getResponse(String statement,String same)
+    public String getResponse(String statement)
     {
         String response = "";
-        if (statement == same )
-        {
-            response = "Stop repeating yourself.";
-        }
-       
-        else if (statement.length() == 0)
+        
+         if (statement.length() == 0)
         {
             response = "Say something, please.";
         }

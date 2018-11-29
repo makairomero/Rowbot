@@ -7,26 +7,22 @@ public class RowBotRunner
 {
     public static void main(String[] args)
     {
-        int a = 0;
-        String same = ""; 
-        
+        int a= 0;
         
         RowBot maggie = new RowBot();
         
         System.out.println (maggie.getGreeting());
-        while(a == 0){
-        Scanner in = new Scanner (System.in);
         
+        Scanner in = new Scanner (System.in);
+        while(a == 0){
         String statement = in.nextLine();
         
         if  (statement.equals("Bye"))
         {System.out.println("Ok bye");
             break;
         }
-            System.out.println (maggie.getResponse(statement, same));
-            statement = in.nextLine();
-            same = statement;
-        
+            System.out.println (maggie.getResponse(statement));
+         
         }
         
     
