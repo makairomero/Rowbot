@@ -1,4 +1,8 @@
 /**
+ * Designed by Makai, name, name, and name.
+ * Version 1.1
+ * A lot of this is borrowed from Magpie.
+ * 
  * This is where I will list some things so please help me with them.
  * 
  * Should this bot react to crude words?
@@ -8,14 +12,12 @@
  */
 public class RowBot
 {
-    /**
-     * Get a default greeting   
-     * @return a greeting
-     */ 
+
     public String getGreeting()
     {
         return "Hello, let's talk.";
     }
+
     /**
      * Gives a response to a user statement
      * 
@@ -26,8 +28,8 @@ public class RowBot
     public String getResponse(String statement)
     {
         String response = "";
-        
-         if (statement.length() == 0)
+
+        if (statement.length() == 0)
         {
             response = "Say something, please.";
         }
@@ -42,6 +44,19 @@ public class RowBot
         || findKeyword(statement, "brother") >= 0)
         {
             response = "Tell me more about your family.";
+        }
+        // Responses to questions.
+        // You'd be surprised on how effective this actually is.
+        else if (findKeyword(statement, "Why") >= 0 || findKeyword(statement, "why") >= 0)
+        {
+            final int x = 2; //This is how many responses there are specifically to this.
+            double rndNum = Math.random(); //The random number generator.
+            int getRandom = (int)(rndNum * x); //The actual random number.
+            if (getRandom == 0){
+                response = "Because that's just how it is.";
+            }else if (getRandom == 1){
+                response = "Cause I said so."; //These are only test messages; I will change them later.
+            }
         }
 
         // Responses which require transformations
@@ -140,7 +155,7 @@ public class RowBot
         String restOfStatement = statement.substring(psnOfYou + 3, psnOfMe).trim();
         return "What makes you think that I " + restOfStatement + " you?";
     }
-    
+
     private String transformISomethingYouStatement(String statement)
     {
         //  Remove the final period, if there is one
@@ -160,7 +175,6 @@ public class RowBot
         return "Why do you " + restOfStatement + " me?";
     }
 
-    
     /**
      * Search for one word in phrase. The search is not case
      * sensitive. This method will check that the given goal
