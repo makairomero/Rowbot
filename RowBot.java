@@ -1,6 +1,6 @@
 /**
  * Designed by Makai, name, name, and name.
- * Version 1.1
+ * Version 1.2
  * A lot of this is borrowed from Magpie.
  * 
  * This is where I will list some things so please help me with them.
@@ -45,9 +45,34 @@ public class RowBot
         {
             response = "Tell me more about your family.";
         }
+        //THIS IS WHERE I WILL START TO PUT INTELLIGENT RESPONSES
+        //This will be based off a chatbot designed by an SP coder for a game mod.
+        else if (findKeyword(statement.toLowerCase(), "test") >= 0) //This was a test to check how I could use a different method. If I forget to remove this when we submit, please remove it.
+        {
+            response = "test message";
+        }
+        //end of test
+        //Thanking responses
+        else if (findKeyword(statement.toLowerCase(), "thank") >= 0 || findKeyword(statement.toLowerCase(), "thanks") >= 0)
+        {
+            final int x = 5;
+            double rndNum = Math.random();
+            int getRandom = (int)(rndNum * x); //I wonder if we could have easily written this as (Math.random() * [number of responses]) and still get the same result.
+            if (getRandom == 0){
+                response = "You're welcome.";
+            }else if (getRandom == 1){
+                response = "Welcome. :)"; //If you guys don't think there should be emoticons like :) or :D feel free to remove them. It is supposed to be intelligent after all. :)
+            }else if (getRandom == 2){
+                response = "No problem.";
+            }else if (getRandom == 3){
+                response = "You are welcome. :D";
+            }else if (getRandom == 4){
+                response = "Happy to help.";
+            }
+        }
         // Responses to questions.
         // You'd be surprised on how effective this actually is.
-        else if (findKeyword(statement, "Why") >= 0 || findKeyword(statement, "why") >= 0)
+        else if (findKeyword(statement.toLowerCase(), "why") >= 0)
         {
             final int x = 2; //This is how many responses there are specifically to this.
             double rndNum = Math.random(); //The random number generator.
