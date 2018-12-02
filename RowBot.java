@@ -1,6 +1,6 @@
 /**
  * Designed by Makai, name, name, and name.
- * Version 1.4
+ * Version 1.4.1
  * A lot of this is borrowed from Magpie.
  * 
  * This is where I will list some things so please help me with them.
@@ -94,10 +94,9 @@ public class RowBot
         }
         // ** Responses to questions.
         // You'd be surprised on how effective this actually is.
-
-        // * Either Or responses
         else if (statement.contains("?")) // This is a method that I'm introducing here. You don't have to use it. The point of this is to make sure the bot responds to Or as a question. 
         {
+            // * Either Or responses
             if (findKeyword(statement.toLowerCase(), "or") >= 0)
             {
                 final int x = 5;
@@ -115,6 +114,7 @@ public class RowBot
                     response = "None!";
                 }
             }
+            // * Why responses
             else if (findKeyword(statement.toLowerCase(), "why") >= 0)
             {
                 final int x = 10; //This is how many responses there are specifically to this.
