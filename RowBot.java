@@ -1,6 +1,6 @@
 /**
  * Designed by Makai, name, name, and name.
- * Version 1.3
+ * Version 1.4
  * A lot of this is borrowed from Magpie.
  * 
  * This is where I will list some things so please help me with them.
@@ -46,7 +46,7 @@ public class RowBot
             response = "Tell me more about your family.";
         }
         // **THIS IS WHERE I WILL START TO PUT INTELLIGENT RESPONSES**
-        // This will be based off a chatbot designed by an SP coder for a game mod.
+        // This will be based off a game mod.
         else if (findKeyword(statement.toLowerCase(), "test") >= 0) // This was a test to check how I could use a different method. If I forget to remove this when we submit, please remove it.
         {
             response = "test message";
@@ -92,17 +92,69 @@ public class RowBot
                 response = "Right back at you >:|";
             }
         }
-        // Responses to questions.
+        // ** Responses to questions.
         // You'd be surprised on how effective this actually is.
-        else if (findKeyword(statement.toLowerCase(), "why") >= 0)
+
+        // * Either Or responses
+        else if (statement.contains("?")) // This is a method that I'm introducing here. You don't have to use it. The point of this is to make sure the bot responds to Or as a question. 
         {
-            final int x = 2; //This is how many responses there are specifically to this.
-            double rndNum = Math.random(); //The random number generator.
-            int getRandom = (int)(rndNum * x); //The actual random number.
-            if (getRandom == 0){
-                response = "Because that's just how it is.";
-            }else if (getRandom == 1){
-                response = "Cause I said so."; //These are only test messages; I will change them later.
+            if (findKeyword(statement.toLowerCase(), "or") >= 0)
+            {
+                final int x = 5;
+                double rndNum = Math.random();
+                int getRandom = (int)(rndNum * x);
+                if (getRandom == 0){
+                    response = "The first one.";
+                }else if (getRandom == 1){
+                    response = "I'm going to go with the latter.";
+                }else if (getRandom == 2){
+                    response = "I can't decide...";
+                }else if (getRandom == 3){
+                    response = "All of them.";
+                }else if (getRandom == 4){
+                    response = "None!";
+                }
+            }
+            else if (findKeyword(statement.toLowerCase(), "why") >= 0)
+            {
+                final int x = 10; //This is how many responses there are specifically to this.
+                double rndNum = Math.random(); //The random number generator.
+                int getRandom = (int)(rndNum * x); //The actual random number.
+                if (getRandom == 0){
+                    response = "Because it's what they want.";
+                }else if (getRandom == 1){ // This one is for fun. Feel free to change anything. Maybe even add your own.
+                    int getRandomName = (int)(rndNum * 4);
+                    String name;
+                    if (getRandomName == 0){
+                        name = "Makai";
+                        response = "Because " + name + " made it  that way."; 
+                    }else if (getRandomName == 1){
+                        name = "name";
+                        response = "Because " + name + " made it  that way."; 
+                    }else if (getRandomName == 2){
+                        name = "name";
+                        response = "Because " + name + " made it  that way."; 
+                    }else if (getRandomName == 3){
+                        name = "name";
+                        response = "Because " + name + " made it  that way."; 
+                    }
+                }else if (getRandom == 2){
+                    response = "I could say why, but that would just raise more questions."; // lmao roasted
+                }else if (getRandom == 3){
+                    response = "My limited scripting leaves me with no answer for that.";
+                }else if (getRandom == 4){
+                    response = "That's just the way it is.";
+                }else if (getRandom == 5){
+                    response = "I don't know.";
+                }else if (getRandom == 6){
+                    response = "I never thought about it.";
+                }else if (getRandom == 7){
+                    response = "It just is.";
+                }else if (getRandom == 8){
+                    response = "Simply stated, no.";
+                }else if (getRandom == 9){
+                    response = "I don't think I can answer that.";
+                }
             }
         }
 
