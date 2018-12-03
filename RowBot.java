@@ -62,7 +62,9 @@ public class RowBot
         || findKeyword(statement, "cat") >= 0
         || findKeyword(statement, "lizard") >=0
         || findKeyword(statement, "bird") >=0
-        || findKeyword(statement, "fish") >= 0)
+        || findKeyword(statement, "fish") >= 0
+        || findKeyword(statement, "human") >= 0)
+        
         {
             response = "I like animals";
         }
@@ -273,7 +275,7 @@ public class RowBot
                     if (getRandom == 0){
                         response = "Huge!";
                     }else if (getRandom == 1){
-                        response = "Pretty small.";
+                        response = "It expands multiple quantums.";
                     }else if (getRandom == 2){
                         response = "I can't even see it.";
                     }else if (getRandom == 3){
