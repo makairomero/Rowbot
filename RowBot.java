@@ -1,6 +1,6 @@
 /**
  * Designed by Makai, name, name, and name.
- * Version 1.9.1
+ * Version 1.9.6
  * A lot of this is borrowed from Magpie.
  * 
  * This is where I will list some things so please help me with them.
@@ -164,7 +164,8 @@ public class RowBot
                 if (getRandom == 0){
                     response = "Because it's what they want.";
                 }else if (getRandom == 1){ // This one is for fun. Feel free to change anything. Maybe even add your own.
-                    int getRandomName = (int)(rndNum * 4);
+                    double rndNumName = Math.random();
+                    int getRandomName = (int)(rndNumName * 4);
                     String name;
                     if (getRandomName == 0){
                         name = "Makai";
