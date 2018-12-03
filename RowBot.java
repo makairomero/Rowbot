@@ -1,6 +1,6 @@
 /**
  * Designed by Makai, name, name, and name.
- * Version 1.8.1
+ * Version 1.9.1
  * A lot of this is borrowed from Magpie.
  * 
  * This is where I will list some things so please help me with them.
@@ -109,8 +109,24 @@ public class RowBot
                 response = "Right back at you >:|";
             }
         }
+        // * Apology Accept responses
+        else if(findKeyword(statement.toLowerCase(), "sorry") >= 0)
+        {
+            final int x = 4;
+            double rndNum = Math.random();
+            int getRandom = (int)(rndNum * x);
+            if (getRandom == 0){
+                response = "You are forgiven.";
+            }else if (getRandom == 1){
+                response = "Alright.";
+            }else if (getRandom == 2){
+                response = "That's OK.";
+            }else if (getRandom == 3){
+                response = "Apology accepted. :)";
+            }
+        }
         // ** Extra Responses
-        else if (findKeyword(statement.toLowerCase(), "what is 0 divided by 0?") >= 0 || findKeyword(statement.toLowerCase(), "divide 0 by 0") >= 0)
+        else if (findKeyword(statement.toLowerCase(), "what is 0 divided by 0?") >= 0 || findKeyword(statement.toLowerCase(), "divide 0 by 0") >= 0) // Siri reference.
         {
             response = "Imagine that you have zero cookies and you split them evenly among zero friends. How many cookies does each person get? See? It doesn't amke sense. And Cookie Monster is sad that there are no cookies, and you are saw that you have no friends.";
         }
