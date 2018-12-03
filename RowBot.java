@@ -1,6 +1,6 @@
 /**
  * Designed by Makai, name, name, and name.
- * Version 2.0
+ * Version 2.0.1
  * A lot of this is borrowed from Magpie.
  * 
  * This is where I will list some things so please help me with them.
@@ -269,6 +269,7 @@ public class RowBot
             else if (findKeyword(statement.toLowerCase(), "how") >= 0){
                 // Size
                 if (findKeyword(statement.toLowerCase(), "big") >= 0 || findKeyword(statement.toLowerCase(), "small") >= 0){
+                    // These feel like they may be talking about something inappropriate. Let's just hope they don't think of that.
                     final int x = 10;
                     double rndNum = Math.random();
                     int getRandom = (int)(rndNum * x);
