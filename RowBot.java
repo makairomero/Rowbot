@@ -190,9 +190,9 @@ public class RowBot
                 }else if (getRandom == 6){
                     response = "I never thought about it.";
                 }else if (getRandom == 7){
-                    response = "It just is.";
+                    response = "It just is my guy.";
                 }else if (getRandom == 8){
-                    response = "Simply stated, no.";
+                    response = "It just be that way sometimes. ";
                 }else if (getRandom == 9){
                     response = "I don't think I can answer that.";
                 }
