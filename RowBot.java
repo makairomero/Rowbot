@@ -1,6 +1,6 @@
 /**
  * Designed by Makai, name, name, and name.
- * Version 1.5.2
+ * Version 1.6
  * A lot of this is borrowed from Magpie.
  * 
  * This is where I will list some things so please help me with them.
@@ -182,6 +182,34 @@ public class RowBot
                     response = "I don't know lol.";
                 }else if (getRandom == 9){
                     response = "Lol not telling.";
+                }
+            }
+            // * What responses
+            else if (findKeyword(statement.toLowerCase(), "what") >= 0)
+            {
+                final int x = 10;
+                double rndNum = Math.random();
+                int getRandom = (int)(rndNum * x);
+                if (getRandom == 0){
+                    response = "Good question, I don't know though.";
+                }else if (getRandom == 1){
+                    response = "I'm not the one to ask.";
+                }else if (getRandom == 2){
+                    response = "I don't know.";
+                }else if (getRandom == 3){
+                    response = "Google is good for those kind of questions.";
+                }else if (getRandom == 4){
+                    response = "Hmmmm, let me think on  that.";
+                }else if (getRandom == 5){
+                    response = "No idea.";
+                }else if (getRandom == 6){
+                    response = "That makes no sense.";
+                }else if (getRandom == 7){
+                    response = "Can you ask me later?";
+                }else if (getRandom == 8){
+                    response = "That's a little confusing.";
+                }else if (getRandom == 9){
+                    response = "Ummm...ok?";
                 }
             }
         }
