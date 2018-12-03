@@ -1,6 +1,6 @@
 /**
  * Designed by Makai, name, name, and name.
- * Version 1.9.6
+ * Version 2.0
  * A lot of this is borrowed from Magpie.
  * 
  * This is where I will list some things so please help me with them.
@@ -252,6 +252,36 @@ public class RowBot
                     response = "That's a little confusing.";
                 }else if (getRandom == 9){
                     response = "Ummm...ok?";
+                }
+            }
+            // * How responses
+            else if (findKeyword(statement.toLowerCase(), "how") >= 0){
+                // Size
+                if (findKeyword(statement.toLowerCase(), "big") >= 0 || findKeyword(statement.toLowerCase(), "small") >= 0){
+                    final int x = 10;
+                    double rndNum = Math.random();
+                    int getRandom = (int)(rndNum * x);
+                    if (getRandom == 0){
+                        response = "Huge!";
+                    }else if (getRandom == 1){
+                        response = "Pretty small.";
+                    }else if (getRandom == 2){
+                        response = "I can't even see it.";
+                    }else if (getRandom == 3){
+                        response = "I never measured it before.";
+                    }else if (getRandom == 4){
+                        response = "The answer would amaze you. :D";
+                    }else if (getRandom == 5){
+                        response = "Hard to tell.";
+                    }else if (getRandom == 6){
+                        response = "It changes a lot";
+                    }else if (getRandom == 7){
+                        response = "Pretty big.";
+                    }else if (getRandom == 8){
+                        response = "Very small.";
+                    }else if(getRandom == 9){
+                        response = "About average size.";
+                    }
                 }
             }
         }
