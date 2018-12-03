@@ -172,7 +172,7 @@ public class RowBot
                         response = "Because " + name + " made it that way."; 
                     }else if (getRandomName == 1){
                         name = "Evan";
-                        response = " " + name + " made it that way."; 
+                        response = "Because " + name + " made it that way."; 
                     }else if (getRandomName == 2){
                         name = "Damien";
                         response = "Because " + name + " made it that way."; 
