@@ -168,16 +168,16 @@ public class RowBot
                     String name;
                     if (getRandomName == 0){
                         name = "Makai";
-                        response = "Because " + name + " made it  that way."; 
+                        response = "Because " + name + " made it that way."; 
                     }else if (getRandomName == 1){
                         name = "Evan";
-                        response = " " + name + " made it  that way."; 
+                        response = " " + name + " made it that way."; 
                     }else if (getRandomName == 2){
                         name = "Damien";
-                        response = "Because " + name + " made it  that way."; 
+                        response = "Because " + name + " made it that way."; 
                     }else if (getRandomName == 3){
                         name = "Toby";
-                        response = "Because " + name + " made it  that way."; 
+                        response = "Because " + name + " made it that way."; 
                     }
                 }else if (getRandom == 2){
                     response = "I could say why, but that would just raise more questions."; // lmao roasted
