@@ -170,13 +170,13 @@ public class RowBot
                         name = "Makai";
                         response = "Because " + name + " made it  that way."; 
                     }else if (getRandomName == 1){
-                        name = "name";
-                        response = "Because " + name + " made it  that way."; 
+                        name = "Evan";
+                        response = " " + name + " made it  that way."; 
                     }else if (getRandomName == 2){
-                        name = "name";
+                        name = "Damien";
                         response = "Because " + name + " made it  that way."; 
                     }else if (getRandomName == 3){
-                        name = "name";
+                        name = "Toby";
                         response = "Because " + name + " made it  that way."; 
                     }
                 }else if (getRandom == 2){
@@ -206,7 +206,7 @@ public class RowBot
                 if (getRandom == 0){
                     response = "Somewhere close by...";
                 }else if (getRandom == 1){
-                    response = "Did you try MapQuest?";
+                    response = "Did you try Google Maps?";
                 }else if (getRandom == 2){
                     response = "Right over here.";
                 }else if (getRandom == 3){
