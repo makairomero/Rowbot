@@ -1,6 +1,6 @@
 /**
  * Designed by Makai, name, name, and name.
- * Version 1.7
+ * Version 1.8.1
  * A lot of this is borrowed from Magpie.
  * 
  * This is where I will list some things so please help me with them.
@@ -15,7 +15,24 @@ public class RowBot
 
     public String getGreeting()
     {
-        return "Hello, let's talk.";
+        final int x = 5;
+        double rndNum = Math.random();
+        int getRandom = (int)(rndNum * x);
+        String greeting = "greeting_text"; // Don't worry. As long as this method works correctly, this should never show.
+        // Here I decided to change up the greeting so it's not always the same one. Feel free to modify it however you like. 
+
+        if (getRandom == 0){
+            greeting = "Hello, let's talk.";
+        }else if (getRandom == 1){
+            greeting =  "Hey!";
+        }else if (getRandom == 2){
+            greeting = "Hi.";
+        }else if (getRandom == 3){
+            greeting = "What's up?";
+        }else if (getRandom == 4){
+            greeting = "Heyy.";
+        }
+        return greeting;
     }
 
     /**
