@@ -1,6 +1,6 @@
 /**
  * Designed by Makai, name, name, and name.
- * Version 1.6
+ * Version 1.7
  * A lot of this is borrowed from Magpie.
  * 
  * This is where I will list some things so please help me with them.
@@ -91,6 +91,11 @@ public class RowBot
             }else if (getRandom == 5){
                 response = "Right back at you >:|";
             }
+        }
+        // ** Extra Responses
+        else if (findKeyword(statement.toLowerCase(), "what is 0 divided by 0?") >= 0 || findKeyword(statement.toLowerCase(), "divide 0 by 0") >= 0)
+        {
+            response = "Imagine that you have zero cookies and you split them evenly among zero friends. How many cookies does each person get? See? It doesn't amke sense. And Cookie Monster is sad that there are no cookies, and you are saw that you have no friends.";
         }
         // ** Responses to questions.
         // You'd be surprised on how effective this actually is.
