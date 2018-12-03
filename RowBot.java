@@ -58,6 +58,15 @@ public class RowBot
         {
             response = "Why so negative?";
         }
+        else if (findKeyword(statement, "dog") >= 0
+        || findKeyword(statement, "cat") >= 0
+        || findKeyword(statement, "lizard") >=0
+        || findKeyword(statement, "bird") >=0
+        || findKeyword(statement, "fish") >= 0)
+        {
+            response = "I like animals";
+        }
+
         else if (findKeyword(statement, "mother") >= 0
         || findKeyword(statement, "father") >= 0
         || findKeyword(statement, "sister") >= 0
