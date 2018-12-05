@@ -1,6 +1,6 @@
 /**
  * Designed by Makai, name, name, and name.
- * Version 2.0.1
+ * Version 2.1
  * A lot of this is borrowed from Magpie.
  * 
  * This is where I will list some things so please help me with them.
@@ -293,6 +293,25 @@ public class RowBot
                         response = "Very small.";
                     }else if(getRandom == 9){
                         response = "About average size.";
+                    }
+                }
+                // Amount
+                else if (findKeyword(statement.toLowerCase(), "many") >= 0 || findKeyword(statement.toLowerCase(), "much") >= 0){
+                    final int x = 6;
+                    double rndNum = Math.random();
+                    int getRandom = (int)(rndNum * x);
+                    if (getRandom == 0){
+                        response = "A lot!";
+                    }else if (getRandom == 1){
+                        response = "Just a little.";
+                    }else if (getRandom == 2){
+                        response = "More than I can count.";
+                    }else if (getRandom == 3){
+                        response = "None lol.";
+                    }else if (getRandom == 4){
+                        response = "Too many.";
+                    }else if (getRandom == 5){
+                        response = "A decent amount.";
                     }
                 }
             }
