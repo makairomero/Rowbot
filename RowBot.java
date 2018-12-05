@@ -1,6 +1,6 @@
 /**
  * Designed by Makai, name, name, and name.
- * Version 2.1
+ * Version 2.2
  * A lot of this is borrowed from Magpie.
  * 
  * This is where I will list some things so please help me with them.
@@ -64,7 +64,7 @@ public class RowBot
         || findKeyword(statement, "bird") >=0
         || findKeyword(statement, "fish") >= 0
         || findKeyword(statement, "human") >= 0)
-        
+
         {
             response = "I like animals";
         }
@@ -313,6 +313,15 @@ public class RowBot
                     }else if (getRandom == 5){
                         response = "A decent amount.";
                     }
+                }
+            }
+            // * Who responses
+            else if (findKeyword(statement.toLowerCase(), "who") >= 0){
+                final int x = 1;
+                double rndNum = Math.random();
+                int getRandom = (int)(rndNum * x);
+                if (getRandom == 0){
+                    response = "Not entirely sure.";
                 }
             }
         }
