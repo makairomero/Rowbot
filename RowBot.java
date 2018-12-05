@@ -370,7 +370,7 @@ public class RowBot
         }
         int psn = findKeyword (statement, "I want to", 0);
         String restOfStatement = statement.substring(psn + 9).trim();
-        return "What would it mean to " + restOfStatement + "?";
+        return "Why would you want to " + restOfStatement + "?";
     }
 
     private String transformIWantStatement(String statement)
