@@ -1,5 +1,5 @@
 /**
- * Designed by Makai, name, name, and name.
+ * Designed by Makai, Evan, Damien, and Toby.
  * Version 2.2
  * A lot of this is borrowed from Magpie.
  * 
@@ -402,12 +402,6 @@ public class RowBot
         return "Would you be really happy if you had " + restOfStatement + "?";
     }
 
-    /**
-     * Take a statement with "you <something> me" and transform it into 
-     * "What makes you think that I <something> you?"
-     * @param statement the user statement, assumed to contain "you" followed by "me"
-     * @return the transformed statement
-     */
     private String transformYouMeStatement(String statement)
     {
         //  Remove the final period, if there is one
