@@ -1,6 +1,6 @@
 /**
  * Designed by Makai, Evan, Damien, and Toby.
- * Version 2.3
+ * Version 2.4
  * A lot of this is borrowed from Magpie.
  * 
  * This is where I will list some things so please help me with them.
@@ -312,6 +312,28 @@ public class RowBot
                         response = "Too many.";
                     }else if (getRandom == 5){
                         response = "A decent amount.";
+                    }
+                }
+                // Are
+                else if (findKeyword(statement.toLowerCase(), "are") >= 0){
+                    // You
+                    if (findKeyword(statement.toLowerCase(), "you") >= 0){
+                        final int x = 6;
+                        double rndNum = Math.random();
+                        int getRandom = (int)(rndNum * x);
+                        if (getRandom == 0){
+                            response = "Great. :D";
+                        }else if (getRandom == 1){
+                            response = "Doing OK.";
+                        }else if (getRandom == 2){
+                            response = "Never better";
+                        }else if (getRandom == 3){
+                            response = "So-so";
+                        }else if (getRandom == 4){
+                            response = "Not so good.";
+                        }else if (getRandom == 5){
+                            response = "Pretty bad actually.";
+                        }
                     }
                 }
             }
