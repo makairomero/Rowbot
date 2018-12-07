@@ -204,7 +204,7 @@ public class RowBot
                 }else if (getRandom == 7){
                     response = "It just is my guy.";
                 }else if (getRandom == 8){
-                    response = "It just be that way sometimes. ";
+                    response = "It be like that sometimes. ";
                 }else if (getRandom == 9){
                     response = "I don't think I can answer that.";
                 }
