@@ -1,6 +1,6 @@
 /**
  * Designed by Makai, Evan, Damien, and Toby.
- * Version 2.4
+ * Version 2.5
  * A lot of this is borrowed from Magpie.
  * 
  * This is where I will list some things so please help me with them.
@@ -375,6 +375,29 @@ public class RowBot
                     }
                 }
             }
+            // General Question responses
+            else{
+                final int x = 8;
+                    double rndNum = Math.random();
+                    int getRandom = (int)(rndNum * x);
+                    if (getRandom == 0){
+                        response = "Yes.";
+                    }else if (getRandom == 1){
+                        response = "No.";
+                    }else if (getRandom == 2){
+                        response = "Yeah.";
+                    }else if (getRandom == 3){
+                        response = "Nah.";
+                    }else if (getRandom == 4){
+                        response = "Yep.";
+                    }else if (getRandom == 5){
+                        response = "Naw.";
+                    }else if (getRandom == 6){
+                        response = "Maybe.";
+                    }else if (getRandom ==7){
+                        response = "I don't think so.";
+                    }
+                }
         }
 
         // Responses which require transformations
