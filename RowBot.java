@@ -1,6 +1,6 @@
 /**
  * Designed by Makai, Evan, Damien, and Toby.
- * Version 2.5.2
+ * Version 2.6.1
  * A lot of this is borrowed from Magpie.
  * 
  * This is where I will list some things so please help me with them.
@@ -290,7 +290,7 @@ public class RowBot
                     }else if (getRandom == 5){
                         response = "Hard to tell.";
                     }else if (getRandom == 6){
-                        response = "It changes a lot";
+                        response = "It changes a lot.";
                     }else if (getRandom == 7){
                         response = "Pretty big.";
                     }else if (getRandom == 8){
@@ -352,6 +352,7 @@ public class RowBot
             }
             // * When responses
             else if (findKeyword(statement.toLowerCase(), "when") >= 0){
+                // When General
                 if (findKeyword(statement.toLowerCase(), "is") >= 0 || findKeyword(statement.toLowerCase(), "are") >= 0){
                     final int x = 10;
                     double rndNum = Math.random();
@@ -378,30 +379,46 @@ public class RowBot
                         response = "I don't know.";
                     }
                 }
+                else if (findKeyword(statement.toLowerCase(), "was") >= 0 || findKeyword(statement.toLowerCase(), "were") >= 0){
+                    final int x = 5;
+                    double rndNum = Math.random();
+                    int getRandom = (int)(rndNum * x);
+                    if (getRandom == 0){
+                        response = "Last year.";
+                    }else if (getRandom == 1){
+                        response = "Just before.";
+                    }else if (getRandom == 2){
+                        response = "A loooong time ago.";
+                    }else if (getRandom == 3){
+                        response = "A while back.";
+                    }else if (getRandom == 4){
+                        response = "A while ago.";
+                    }
+                }
             }
             // General Question responses
             else{
                 final int x = 8;
-                    double rndNum = Math.random();
-                    int getRandom = (int)(rndNum * x);
-                    if (getRandom == 0){
-                        response = "Yes.";
-                    }else if (getRandom == 1){
-                        response = "No.";
-                    }else if (getRandom == 2){
-                        response = "Yeah.";
-                    }else if (getRandom == 3){
-                        response = "Nah.";
-                    }else if (getRandom == 4){
-                        response = "Yep.";
-                    }else if (getRandom == 5){
-                        response = "Naw.";
-                    }else if (getRandom == 6){
-                        response = "Maybe.";
-                    }else if (getRandom ==7){
-                        response = "I don't think so.";
-                    }
+                double rndNum = Math.random();
+                int getRandom = (int)(rndNum * x);
+                if (getRandom == 0){
+                    response = "Yes.";
+                }else if (getRandom == 1){
+                    response = "No.";
+                }else if (getRandom == 2){
+                    response = "Yeah.";
+                }else if (getRandom == 3){
+                    response = "Nah.";
+                }else if (getRandom == 4){
+                    response = "Yep.";
+                }else if (getRandom == 5){
+                    response = "Naw.";
+                }else if (getRandom == 6){
+                    response = "Maybe.";
+                }else if (getRandom ==7){
+                    response = "I don't think so.";
                 }
+            }
         }
 
         // Responses which require transformations
