@@ -123,6 +123,25 @@ public class RowBot
                 response = "Right back at you >:|";
             }
         }
+        else if (findKeyword(statement.toLowerCase(), "what’s up") >= 0 || findKeyword(statement.toLowerCase(), "hello") >= 0 || findKeyword(statement.toLowerCase(), "hi") >= 0 || findKeyword(statement.toLowerCase(), "wyd") >= 0 || findKeyword(statement.toLowerCase(), "good morning") >= 0 || findKeyword(statement.toLowerCase(), "i’m bored") >= 0)
+        {
+            final int x = 6;
+            double rndNum = Math.random();
+            int getRandom = (int)(rndNum * x);
+            if (getRandom == 0){
+                response = "How are you?";
+            }else if (getRandom == 1){
+                response = "How has your life been?";
+            }else if (getRandom == 2){
+                response = "Do you have any pets?";
+            }else if (getRandom == 3){
+                response = "What is your favorite food?";
+            }else if (getRandom == 4){
+                response = "Do you know who I am?";
+            }else if (getRandom == 5){
+                response = "Do you have a family you would like to tell me about?";
+            }
+        }
         // * Apology Accept responses
         else if(findKeyword(statement.toLowerCase(), "sorry") >= 0)
         {
