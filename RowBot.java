@@ -1,6 +1,6 @@
 /**
  * Designed by Makai, Evan, Damien, and Toby.
- * Version 2.5.1
+ * Version 2.5.2
  * A lot of this is borrowed from Magpie.
  * 
  * This is where I will list some things so please help me with them.
@@ -142,7 +142,7 @@ public class RowBot
         // ** Extra Responses
         else if (findKeyword(statement.toLowerCase(), "what is 0 divided by 0?") >= 0 || findKeyword(statement.toLowerCase(), "divide 0 by 0") >= 0) // Siri reference.
         {
-            response = "Imagine that you have zero cookies and you split them evenly among zero friends. How many cookies does each person get? See? It doesn't amke sense. And Cookie Monster is sad that there are no cookies, and you are saw that you have no friends.";
+            response = "Imagine that you have zero cookies and you split them evenly among zero friends. How many cookies does each person get? See? It doesn't make sense. And Cookie Monster is sad that there are no cookies, and you are saw that you have no friends.";
         }
         else if (findKeyword(statement.toLowerCase(), "anime") >= 0) // I don't really know why I added this.
         {
