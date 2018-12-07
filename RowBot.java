@@ -1,6 +1,6 @@
 /**
  * Designed by Makai, Evan, Damien, and Toby.
- * Version 2.2
+ * Version 2.3
  * A lot of this is borrowed from Magpie.
  * 
  * This is where I will list some things so please help me with them.
@@ -204,7 +204,7 @@ public class RowBot
                 }else if (getRandom == 7){
                     response = "It just is my guy.";
                 }else if (getRandom == 8){
-                    response = "It be like that sometimes. ";
+                    response = "It be like that sometimes.";
                 }else if (getRandom == 9){
                     response = "I don't think I can answer that.";
                 }
@@ -324,6 +324,35 @@ public class RowBot
                     response = "Not entirely sure.";
                 }
             }
+            // * When responses
+            else if (findKeyword(statement.toLowerCase(), "when") >= 0){
+                if (findKeyword(statement.toLowerCase(), "is") >= 0 || findKeyword(statement.toLowerCase(), "are") >= 0){
+                    final int x = 10;
+                    double rndNum = Math.random();
+                    int getRandom = (int)(rndNum * x);
+                    if (getRandom == 0){
+                        response = "A little later.";
+                    }else if (getRandom == 1){
+                        response = "Sometime tomorrow probably.";
+                    }else if (getRandom == 2){
+                        response = "Last year.";
+                    }else if (getRandom == 3){
+                        response = "Right now.";
+                    }else if (getRandom == 4){
+                        response = "Soon.";
+                    }else if (getRandom == 5){
+                        response = "Just before.";
+                    }else if (getRandom == 6){
+                        response = "Later.";
+                    }else if (getRandom == 7){
+                        response = "A loooong time ago lol.";
+                    }else if (getRandom == 8){
+                        response = "A while back.";
+                    }else if (getRandom == 9){
+                        response = "I don't know.";
+                    }
+                }
+            }
         }
 
         // Responses which require transformations
@@ -439,7 +468,8 @@ public class RowBot
         String restOfStatement = statement.substring(psnOfYou + 2, psnOfMe).trim();
         return "Why do you " + restOfStatement + " me?";
     }
-        private String transformImNotSomethingStatement(String statement)
+
+    private String transformImNotSomethingStatement(String statement)
     {
         //  Remove the final period, if there is one
         statement = statement.trim();
@@ -455,7 +485,6 @@ public class RowBot
         String restOfStatement = statement.substring(psn + 7).trim();
         return "Well should you be " + restOfStatement + "?";
     }
-
 
     /**
      * Search for one word in phrase. The search is not case
