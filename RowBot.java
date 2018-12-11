@@ -169,6 +169,10 @@ public class RowBot
         {
             response = "Tell me about your favorite anime. :D";
         }
+        else if (findKeyword(statement.toLowerCase(), "what is 9 plus 10") >= 0 || findKeyword(statement.toLowerCase(), "what is 9+10") >= 0)
+        {
+            response = "9+10 equals 21";
+        }
         // ** Responses to questions.
         // You'd be surprised on how effective this actually is.
         else if (statement.contains("?")) // This is a method that I'm introducing here. You don't have to use it. The point of this is to make sure the bot responds to Or as a question. 
