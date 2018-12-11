@@ -92,6 +92,8 @@ public class RowBot
                 response = "Why not?";
             }else if (getRandom == 3){
                 response = "Can I do anything?";
+            }else if (getRandom == 4){
+                response = "Why not a yes?";
             }
         }
         // * Thanking responses
