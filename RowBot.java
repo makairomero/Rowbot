@@ -73,34 +73,34 @@ public class RowBot
          if (endpoint == -1){
             endpoint = statement.indexOf("Plus") ;
         }
-        else if (endpoint == -1){
+        if (endpoint == -1){
             endpoint = statement.indexOf("+") ;
         }
-        else if (endpoint == -1){
+        if (endpoint == -1){
             endpoint = statement.indexOf("Minus") ;
         }
-        else if (endpoint == -1){
+        if (endpoint == -1){
             endpoint = statement.indexOf("minus") ;
         }
-        else if (endpoint == -1){
+        if (endpoint == -1){
             endpoint = statement.indexOf("-") ;
         }
-        else if (endpoint == -1){
+        if (endpoint == -1){
             endpoint = statement.indexOf("Times") ;
         }
-        else if (endpoint == -1){
+        if (endpoint == -1){
             endpoint = statement.indexOf("times") ;
         }
-        else if (endpoint == -1){
+        if (endpoint == -1){
             endpoint = statement.indexOf("*") ;
         }
-        else if (endpoint == -1){
+        if (endpoint == -1){
             endpoint = statement.indexOf("divided by") ;
         }
-        else if (endpoint == -1){
+        if (endpoint == -1){
             endpoint = statement.indexOf("Divided by") ;
         }
-        else if (endpoint == -1){
+        if (endpoint == -1){
             endpoint = statement.indexOf("/") ;
         }
         space = "";
