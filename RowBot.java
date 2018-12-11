@@ -1,6 +1,6 @@
 /**
  * Designed by Makai, Evan, Damien, and Toby.
- * Version 2.6.1
+ * Version 2.6.3
  * A lot of this is borrowed from Magpie.
  * 
  * This is where I will list some things so please help me with them.
@@ -220,7 +220,7 @@ public class RowBot
                 }else if (getRandom == 2){
                     response = "I could say why, but that would just raise more questions."; // lmao roasted
                 }else if (getRandom == 3){
-                    response = "My limited scripting leaves me with no answer for that.";
+                    response = "My limited scripting leaves me with no answer for that."; // This one would be roasting us right? :/
                 }else if (getRandom == 4){
                     response = "That's just the way it is.";
                 }else if (getRandom == 5){
@@ -294,7 +294,10 @@ public class RowBot
             // * How responses
             else if (findKeyword(statement.toLowerCase(), "how") >= 0){
                 // Size
-                if (findKeyword(statement.toLowerCase(), "big") >= 0 || findKeyword(statement.toLowerCase(), "small") >= 0){
+                if (findKeyword(statement.toLowerCase(), "big") >= 0 
+                || findKeyword(statement.toLowerCase(), "small") >= 0
+                || findKeyword(statement.toLowerCase(), "little") >= 0
+                || findKeyword(statement.toLowerCase(), "large") >= 0){
                     // These feel like they may be talking about something inappropriate. Let's just hope they don't think of that.
                     final int x = 10;
                     double rndNum = Math.random();
