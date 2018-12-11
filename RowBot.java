@@ -1,6 +1,6 @@
 /**
  * Designed by Makai, Evan, Damien, and Toby.
- * Version 2.8
+ * Version 2.9
  * A lot of this is borrowed from Magpie.
  * 
  * This is where I will list some things so please help me with them.
@@ -367,19 +367,45 @@ public class RowBot
                 // When Often
                 else if (findKeyword(statement.toLowerCase(), "often") >= 0){
                     final int x = 5;
+                    double rndNum = Math.random();
+                    int getRandom = (int)(rndNum * x);
+                    if (getRandom == 0){
+                        response = "Every day.";
+                    }else if (getRandom == 1){
+                        response = "Once in a while.";
+                    }else if (getRandom == 2){
+                        response = "Not very often.";
+                    }else if (getRandom == 3){
+                        response = "Twice a week.";
+                    }else if (getRandom == 4){
+                        response = "Every few seconds or so";
+                    }
+                }
+                // Time Length Past
+                else if (findKeyword(statement.toLowerCase(), "long") >= 0){
+                    if (findKeyword(statement.toLowerCase(), "did") >= 0
+                    || findKeyword(statement.toLowerCase(), "was") >= 0
+                    || findKeyword(statement.toLowerCase(), "were") >= 0){
+                        final int x = 5;
                         double rndNum = Math.random();
                         int getRandom = (int)(rndNum * x);
                         if (getRandom == 0){
-                            response = "Every day.";
+                            response = "A few days ago.";
                         }else if (getRandom == 1){
-                            response = "Once in a while.";
+                            response = "A very long time. :3";
                         }else if (getRandom == 2){
-                            response = "Not very often.";
+                            response = "A while back.";
                         }else if (getRandom == 3){
-                            response = "Twice a week.";
+                            response = "Some time ago";
                         }else if (getRandom == 4){
-                            response = "Every few seconds or so";
+                            response = "Just a moment ago.";
                         }
+                    }
+                    else if (findKeyword(statement.toLowerCase(), "will") >= 0){
+                        final int x = 5;
+                        double rndNum = Math.random();
+                        int getRandom = (int)(rndNum * x);
+                    }
                 }
             }
             // * Who responses
