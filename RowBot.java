@@ -1,6 +1,6 @@
 /**
  * Designed by Makai, Evan, Damien, and Toby.
- * Version 2.9.2
+ * Version 3.1
  * A lot of this is borrowed from Magpie.
  * 
  * This is where I will list some things so please help me with them.
