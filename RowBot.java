@@ -1,6 +1,6 @@
 /**
  * Designed by Makai, Evan, Damien, and Toby.
- * Version 2.7
+ * Version 2.7.1
  * A lot of this is borrowed from Magpie.
  * 
  * This is where I will list some things so please help me with them.
@@ -404,7 +404,9 @@ public class RowBot
                     }
                 }
                 // When Past
-                else if (findKeyword(statement.toLowerCase(), "was") >= 0 || findKeyword(statement.toLowerCase(), "were") >= 0){
+                else if (findKeyword(statement.toLowerCase(), "was") >= 0 
+                || findKeyword(statement.toLowerCase(), "were") >= 0
+                || findKeyword(statement.toLowerCase(), "did") >= 0){
                     final int x = 5;
                     double rndNum = Math.random();
                     int getRandom = (int)(rndNum * x);
