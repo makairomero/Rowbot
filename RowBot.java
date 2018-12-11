@@ -104,7 +104,10 @@ public class RowBot
         // * Insulted responses
         // This is where we would add the crude words but I am not sure if we should. We want it to be intelligent, but this part of it is the most aggressive.
         // I'm questioning on whether or not we should keep this.
-        else if (findKeyword(statement.toLowerCase(), "screw") >= 0 || findKeyword(statement.toLowerCase(), "suck") >= 0)
+        else if (findKeyword(statement.toLowerCase(), "screw") >= 0
+        || findKeyword(statement.toLowerCase(), "suck") >= 0
+        || findKeyword(statement.toLowerCase(), "fuck") >= 0
+        || findKeyword(statement.toLowerCase(), "ass") >= 0)
         {
             final int x = 6;
             double rndNum = Math.random();
