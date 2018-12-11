@@ -1,11 +1,10 @@
 /**
  * Designed by Makai, Evan, Damien, and Toby.
- * Version 2.6.3
+ * Version 2.7
  * A lot of this is borrowed from Magpie.
  * 
  * This is where I will list some things so please help me with them.
  * 
- * Should this bot react to crude words?
  * Possibly math stuff.
  * New keyword finders.
  * How about a little trivia?
@@ -404,6 +403,7 @@ public class RowBot
                         response = "I don't know.";
                     }
                 }
+                // When Past
                 else if (findKeyword(statement.toLowerCase(), "was") >= 0 || findKeyword(statement.toLowerCase(), "were") >= 0){
                     final int x = 5;
                     double rndNum = Math.random();
@@ -418,6 +418,23 @@ public class RowBot
                         response = "A while back.";
                     }else if (getRandom == 4){
                         response = "A while ago.";
+                    }
+                }
+                // When Future
+                else if (findKeyword(statement.toLowerCase(), "will") >= 0){
+                    final int x = 5;
+                    double rndNum = Math.random();
+                    int getRandom = (int)(rndNum * x);
+                    if (getRandom == 0){
+                        response = "A little later.";
+                    }else if (getRandom == 1){
+                        response = "Sometime tomorrow probably.";
+                    }else if (getRandom == 2){
+                        response = "Right now.";
+                    }else if (getRandom == 3){
+                        response = "Soon";
+                    }else if (getRandom == 4){
+                        response = "Later.";
                     }
                 }
             }
