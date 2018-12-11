@@ -1,6 +1,6 @@
 /**
  * Designed by Makai, Evan, Damien, and Toby.
- * Version 2.9
+ * Version 2.9.2
  * A lot of this is borrowed from Magpie.
  * 
  * This is where I will list some things so please help me with them.
@@ -409,6 +409,17 @@ public class RowBot
                         final int x = 5;
                         double rndNum = Math.random();
                         int getRandom = (int)(rndNum * x);
+                        if (getRandom == 0){
+                            response = "A little big longer.";
+                        }else if (getRandom == 1){
+                            response = "Later.";
+                        }else if (getRandom == 2){
+                            response = "Very soon";
+                        }else if (getRandom == 3){
+                            response = "Right now actually.";
+                        }else if (getRandom == 4){
+                            response = "A few years. :D";
+                        }
                     }
                 }
             }
