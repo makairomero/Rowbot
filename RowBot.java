@@ -5,8 +5,8 @@
  * 
  * This is where I will list some things so please help me with them.
  * 
- * Possibly math stuff.
- * New keyword finders.
+ * 
+ * 
  * How about a little trivia?
  */
 public class RowBot
@@ -243,7 +243,7 @@ public class RowBot
         || findKeyword(statement, "Divided by") >= 0
         || findKeyword(statement, "/") >= 0)
         { 
-            answer = num1 * num2;
+            answer = num1 / num2;
             response = "" + answer;
         }
     }
