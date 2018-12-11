@@ -53,10 +53,7 @@ public class RowBot
             response = "Say something, please.";
         }
 
-        else if (findKeyword(statement, "no") >= 0)
-        {
-            response = "Why so negative?";
-        }
+        
         else if (findKeyword(statement, "dog") >= 0
         || findKeyword(statement, "cat") >= 0
         || findKeyword(statement, "lizard") >=0
@@ -82,6 +79,21 @@ public class RowBot
             response = "test message";
         }
         // end of test
+        else if (findKeyword(statement, "no") >= 0 || findKeyword(statement.toLowerCase(), "nope") >= 0) 
+        {
+            final int x = 5;
+            double rndNum = Math.random();
+            int getRandom = (int)(rndNum * x); 
+            if (getRandom == 0){
+                response = "Why are you so negative?";
+            }else if (getRandom == 1){
+                response = "What's wrong"; 
+            }else if (getRandom == 2){
+                response = "Why not?";
+            }else if (getRandom == 3){
+                response = "Can I do anything?";
+            }
+        }
         // * Thanking responses
         else if (findKeyword(statement.toLowerCase(), "thank") >= 0 || findKeyword(statement.toLowerCase(), "thanks") >= 0)
         {
