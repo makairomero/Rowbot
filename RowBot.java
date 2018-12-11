@@ -1,6 +1,6 @@
 /**
  * Designed by Makai, Evan, Damien, and Toby.
- * Version 2.7.1
+ * Version 2.8
  * A lot of this is borrowed from Magpie.
  * 
  * This is where I will list some things so please help me with them.
@@ -363,6 +363,23 @@ public class RowBot
                             response = "Pretty bad actually.";
                         }
                     }
+                }
+                // When Often
+                else if (findKeyword(statement.toLowerCase(), "often") >= 0){
+                    final int x = 5;
+                        double rndNum = Math.random();
+                        int getRandom = (int)(rndNum * x);
+                        if (getRandom == 0){
+                            response = "Every day.";
+                        }else if (getRandom == 1){
+                            response = "Once in a while.";
+                        }else if (getRandom == 2){
+                            response = "Not very often.";
+                        }else if (getRandom == 3){
+                            response = "Twice a week.";
+                        }else if (getRandom == 4){
+                            response = "Every few seconds or so";
+                        }
                 }
             }
             // * Who responses
