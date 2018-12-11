@@ -553,8 +553,6 @@ public class RowBot
 
         else
         {
-            // Look for a two word (you <something> me)
-            // pattern
             int psn = findKeyword(statement, "you", 0);
             int psn1 = findKeyword(statement, "I", 0);
             if (psn >= 0
