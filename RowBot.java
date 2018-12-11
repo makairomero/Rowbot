@@ -11,7 +11,9 @@
  */
 public class RowBot
 {
-
+    int endpoint, startpoint, newend ;
+    String space;
+    double num1, num2, answer; 
     public String getGreeting()
     {
         final int x = 5;
@@ -52,7 +54,200 @@ public class RowBot
         {
             response = "Say something, please.";
         }
-
+        
+        else  if (findKeyword(statement, "plus") >= 0
+        || findKeyword(statement, "Plus") >= 0
+        || findKeyword(statement, "+") >= 0
+        || findKeyword(statement, "Minus") >= 0
+        || findKeyword(statement, "minus") >= 0
+        || findKeyword(statement, "-") >= 0
+        || findKeyword(statement, "Times") >= 0
+        || findKeyword(statement, "times") >= 0
+        || findKeyword(statement, "*") >= 0
+        || findKeyword(statement, "Divided by") >= 0
+        || findKeyword(statement, "divided by") >= 0
+        || findKeyword(statement, "/") >= 0)
+        {
+            
+        endpoint = statement.indexOf("plus");
+         if (endpoint == -1){
+            endpoint = statement.indexOf("Plus") ;
+        }
+        else if (endpoint == -1){
+            endpoint = statement.indexOf("+") ;
+        }
+        else if (endpoint == -1){
+            endpoint = statement.indexOf("Minus") ;
+        }
+        else if (endpoint == -1){
+            endpoint = statement.indexOf("minus") ;
+        }
+        else if (endpoint == -1){
+            endpoint = statement.indexOf("-") ;
+        }
+        else if (endpoint == -1){
+            endpoint = statement.indexOf("Times") ;
+        }
+        else if (endpoint == -1){
+            endpoint = statement.indexOf("times") ;
+        }
+        else if (endpoint == -1){
+            endpoint = statement.indexOf("*") ;
+        }
+        else if (endpoint == -1){
+            endpoint = statement.indexOf("divided by") ;
+        }
+        else if (endpoint == -1){
+            endpoint = statement.indexOf("Divided by") ;
+        }
+        else if (endpoint == -1){
+            endpoint = statement.indexOf("/") ;
+        }
+        space = "";
+        endpoint = endpoint -1;
+        startpoint = endpoint;
+        startpoint = startpoint -1;
+        newend= statement.indexOf(' ',startpoint);   
+        while (statement.indexOf(' ',startpoint) == endpoint )
+        {
+        newend= statement.indexOf(' ',startpoint);   
+        if (startpoint == 0){
+            startpoint = -1; 
+            break;
+        }
+        startpoint = startpoint -1; 
+        }
+        space = statement.substring(startpoint+1,endpoint);
+        if (findKeyword(space, "One") >= 0
+        || findKeyword(space, "one") >= 0
+        || findKeyword(space, "1") >= 0){
+        num1 = 1;
+        }
+        else if (findKeyword(space, "Two") >= 0
+        || findKeyword(space, "two") >= 0
+        || findKeyword(space, "2") >= 0){
+        num1 = 2; 
+        }
+        else if (findKeyword(space, "Three") >= 0
+        || findKeyword(space, "three") >= 0
+        || findKeyword(space, "3") >= 0){
+        num1 = 3;
+        }
+        else if (findKeyword(space, "Four") >= 0
+        || findKeyword(space, "four") >= 0
+        || findKeyword(space, "4") >= 0){
+        num1 = 4;
+        }
+        else if (findKeyword(space, "Five") >= 0
+        || findKeyword(space, "five") >= 0
+        || findKeyword(space, "5") >= 0){
+        num1 = 5;
+        }
+        else if (findKeyword(space, "Six") >= 0
+        || findKeyword(space, "six") >= 0
+        || findKeyword(space, "6") >= 0){
+        num1 = 6; 
+        }
+        else if (findKeyword(space, "Seven") >= 0
+        || findKeyword(space, "seven") >= 0
+        || findKeyword(space, "7") >= 0){
+        num1 = 7;
+        }
+        else if (findKeyword(space, "eight") >= 0
+        || findKeyword(space, "Eight") >= 0
+        || findKeyword(space, "8") >= 0){
+        num1 = 8;
+        }
+        else if (findKeyword(space, "Nine") >= 0
+        || findKeyword(space, "nine") >= 0
+        || findKeyword(space, "9") >= 0){
+        num1 = 9;
+        }
+        endpoint = statement.indexOf(' ',endpoint + 2);
+        startpoint = endpoint + 1; 
+        endpoint = statement.indexOf(' ',startpoint);
+        if (endpoint == -1)
+        { 
+        endpoint = statement.length();
+        }
+        space = statement.substring(startpoint,endpoint);
+        
+        if (findKeyword(space, "One") >= 0
+        || findKeyword(space, "one") >= 0
+        || findKeyword(space, "1") >= 0){
+        num2 = 1;
+        }
+        else if (findKeyword(space, "Two") >= 0
+        || findKeyword(space, "two") >= 0
+        || findKeyword(space, "2") >= 0){
+        num2 = 2; 
+        }
+        else if (findKeyword(space, "Three") >= 0
+        || findKeyword(space, "three") >= 0
+        || findKeyword(space, "3") >= 0){
+        num2 = 3;
+        }
+        else if (findKeyword(space, "Four") >= 0
+        || findKeyword(space, "four") >= 0
+        || findKeyword(space, "4") >= 0){
+        num2 = 4;
+        }
+        else if (findKeyword(space, "Five") >= 0
+        || findKeyword(space, "five") >= 0
+        || findKeyword(space, "5") >= 0){
+        num2 = 5;
+        }
+        else if (findKeyword(space, "Six") >= 0
+        || findKeyword(space, "six") >= 0
+        || findKeyword(space, "6") >= 0){
+        num2 = 6; 
+        }
+        else if (findKeyword(space, "Seven") >= 0
+        || findKeyword(space, "seven") >= 0
+        || findKeyword(space, "7") >= 0){
+        num2 = 7;
+        }
+        else if (findKeyword(space, "eight") >= 0
+        || findKeyword(space, "Eight") >= 0
+        || findKeyword(space, "8") >= 0){
+        num2 = 8;
+        }
+        else if (findKeyword(space, "Nine") >= 0
+        || findKeyword(space, "nine") >= 0
+        || findKeyword(space, "9") >= 0){
+        num2 = 9;
+        }
+        
+        if (findKeyword(statement, "plus") >= 0
+        || findKeyword(statement, "Plus") >= 0
+        || findKeyword(statement, "+") >= 0)
+        { 
+            answer = num1 + num2;
+            response = "" + answer;
+        }
+        else if (findKeyword(statement, "minus") >= 0
+        || findKeyword(statement, "Minus") >= 0
+        || findKeyword(statement, "-") >= 0)
+        { 
+            answer = num1 - num2;
+            response = "" + answer;
+        }
+        else if (findKeyword(statement, "times") >= 0
+        || findKeyword(statement, "Times") >= 0
+        || findKeyword(statement, "*") >= 0)
+        { 
+            answer = num1 * num2;
+            response = "" + answer;
+        }
+        else if (findKeyword(statement, "divided by") >= 0
+        || findKeyword(statement, "Divided by") >= 0
+        || findKeyword(statement, "/") >= 0)
+        { 
+            answer = num1 * num2;
+            response = "" + answer;
+        }
+    }
+          
         
         else if (findKeyword(statement, "dog") >= 0
         || findKeyword(statement, "cat") >= 0
