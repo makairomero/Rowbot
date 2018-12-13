@@ -1,7 +1,7 @@
 /**
  * ROWBOT
  * Designed by Makai, Evan, Damien, and Toby.
- * Version 3.1.3
+ * Version 3.1.5
  * A lot of this is borrowed from Magpie.
  * 
  * This is where I will list some things so please help me with them.
@@ -327,7 +327,7 @@ public class RowBot
         // I'm questioning on whether or not we should keep this.
         else if (findKeyword(statement.toLowerCase(), "screw") >= 0
         || findKeyword(statement.toLowerCase(), "suck") >= 0
-        || findKeyword(statement.toLowerCase(), "fuck") >= 0
+        || findKeyword(statement.toLowerCase(), "fuck") >= 0 // This one is highly offensive.
         || findKeyword(statement.toLowerCase(), "ass") >= 0)
         {
             final int x = 6;
@@ -404,6 +404,10 @@ public class RowBot
         else if (findKeyword(statement.toLowerCase(), "what's your name?")>= 0 || findKeyword(statement.toLowerCase(), "whats your name?") >=0 || findKeyword(statement.toLowerCase(), "what is your name?") >=0)
         {
             response = "Inferior race has been detected. Immediate removal process commencing in 5....4....3....2....1...jk lol";
+        }
+        else if (statement.contains("what are you") || statement.contains("who are you"))
+        {
+            response = "I am ROWBOT, a superior chatbot. Beats Cleverbot and Mitsuku by a bit.";
         }
         // ** Responses to questions.
         // You'd be surprised on how effective this actually is.
