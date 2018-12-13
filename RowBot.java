@@ -23,15 +23,15 @@ public class RowBot
         // Here I decided to change up the greeting so it's not always the same one. Feel free to modify it however you like. 
 
         if (getRandom == 0){
-            greeting = "Hello, let's talk.";
+            greeting = "Hello I am Rowbot, let's talk.";
         }else if (getRandom == 1){
-            greeting =  "Hey!";
+            greeting =  "Hey!I am Rowbot.";
         }else if (getRandom == 2){
-            greeting = "Hi.";
+            greeting = "Hi. My name is Rowbot.";
         }else if (getRandom == 3){
-            greeting = "What's up?";
+            greeting = "What's up? My name is Rowbot.";
         }else if (getRandom == 4){
-            greeting = "Heyy.";
+            greeting = "Heyy. My name is Rowbot.";
         }
         return greeting;
     }
