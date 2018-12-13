@@ -349,7 +349,7 @@ public class RowBot
         }
         else if (findKeyword(statement.toLowerCase(), "what’s up") >= 0 || findKeyword(statement.toLowerCase(), "hello") >= 0 || findKeyword(statement.toLowerCase(), "hi") >= 0 || findKeyword(statement.toLowerCase(), "wyd") >= 0 || findKeyword(statement.toLowerCase(), "good morning") >= 0 || findKeyword(statement.toLowerCase(), "i’m bored") >= 0)
         {
-            final int x = 6;
+            final int x = 7;
             double rndNum = Math.random();
             int getRandom = (int)(rndNum * x);
             if (getRandom == 0){
@@ -364,6 +364,8 @@ public class RowBot
                 response = "Do you know who I am?";
             }else if (getRandom == 5){
                 response = "Do you have a family you would like to tell me about?";
+            }else if (getRandom == 6){
+                response = "What is your name?";
             }
         }
         // * Apology Accept responses
@@ -396,6 +398,10 @@ public class RowBot
             response = "9+10 equals 21";
         }
         else if (findKeyword(statement.toLowerCase(), "elitebott")>= 0 || findKeyword(statement.toLowerCase(), "we are better") >=0)
+        {
+            response = "Inferior race has been detected. Immediate removal process commencing in 5....4....3....2....1...jk lol";
+        }
+        else if (findKeyword(statement.toLowerCase(), "what's your name?")>= 0 || findKeyword(statement.toLowerCase(), "whats your name?") >=0 || findKeyword(statement.toLowerCase(), "what is your name?") >=0)
         {
             response = "Inferior race has been detected. Immediate removal process commencing in 5....4....3....2....1...jk lol";
         }
