@@ -395,6 +395,10 @@ public class RowBot
         {
             response = "9+10 equals 21";
         }
+        else if (findKeyword(statement.toLowerCase(), "elitebott")>= 0 || findKeyword(statement.toLowerCase(), "we are better") >=0)
+        {
+            response = "Inferior race has been detected. Immediate removal process commencing in 5....4....3....2....1...jk lol";
+        }
         // ** Responses to questions.
         // You'd be surprised on how effective this actually is.
         else if (statement.contains("?")) // This is a method that I'm introducing here. You don't have to use it. The point of this is to make sure the bot responds to Or as a question. 
