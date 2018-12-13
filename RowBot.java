@@ -163,6 +163,10 @@ public class RowBot
         || findKeyword(space, "9") >= 0){
         num1 = 9;
         }
+        else if (findKeyword(space, "Zero") >= 0
+        || findKeyword(space, "0") >= 0){
+        num1 = 0;
+        }
         endpoint = statement.indexOf(' ',endpoint + 2);
         startpoint = endpoint + 1; 
         endpoint = statement.indexOf(' ',startpoint);
@@ -217,6 +221,11 @@ public class RowBot
         || findKeyword(space, "9") >= 0){
         num2 = 9;
         }
+        else if (findKeyword(space, "Zero") >= 0
+        || findKeyword(space, "0") >= 0){
+        num2 = 0;
+        }
+        
         
         if (findKeyword(statement, "plus") >= 0
         || findKeyword(statement, "Plus") >= 0
@@ -239,6 +248,10 @@ public class RowBot
             answer = num1 * num2;
             response = "" + answer;
         }
+        else if (num2 == 0){
+               response = "undefined"; 
+               
+            }
         else if (findKeyword(statement, "divided by") >= 0
         || findKeyword(statement, "Divided by") >= 0
         || findKeyword(statement, "/") >= 0)
