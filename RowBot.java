@@ -46,7 +46,7 @@ public class RowBot
     public String getResponse(String statement, String same)
     {
         String response = "";
-        if(same == statement)
+        if ( same.equals(statement))
         {
             response = "Stop repeating yourself";
         }
