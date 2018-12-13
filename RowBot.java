@@ -1,7 +1,7 @@
 /**
  * ROWBOT
  * Designed by Makai, Evan, Damien, and Toby.
- * Version 3.1.5
+ * Version 3.1.6
  * A lot of this is borrowed from Magpie.
  * 
  * This is where I will list some things so please help me with them.
@@ -405,7 +405,7 @@ public class RowBot
         {
             response = "Inferior race has been detected. Immediate removal process commencing in 5....4....3....2....1...jk lol";
         }
-        else if (statement.contains("what are you") || statement.contains("who are you"))
+        else if (statement.toLowerCase().contains("what are you") || statement.toLowerCase().contains("who are you"))
         {
             response = "I am ROWBOT, a superior chatbot. Beats Cleverbot and Mitsuku by a bit.";
         }
