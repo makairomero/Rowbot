@@ -1,12 +1,12 @@
 /**
+ * ROWBOT
  * Designed by Makai, Evan, Damien, and Toby.
- * Version 3.1
+ * Version 3.1.3
  * A lot of this is borrowed from Magpie.
  * 
  * This is where I will list some things so please help me with them.
  * 
- * 
- * 
+ * TO-DO LIST
  * How about a little trivia?
  */
 public class RowBot
@@ -646,6 +646,15 @@ public class RowBot
                         }else if (getRandom == 4){
                             response = "A few years. :D";
                         }
+                    }
+                }else{
+                    // * Default responses
+                    // I don't have many ideas here so please help me.
+                    final int x = 1;
+                    double rndNum = Math.random();
+                    int getRandom = (int)(rndNum * x);
+                    if (getRandom == 0){
+                        response = "I have no idea.";
                     }
                 }
             }
