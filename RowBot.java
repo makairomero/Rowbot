@@ -1,7 +1,7 @@
 /**
  * ROWBOT
  * Designed by Makai, Evan, Damien, and Toby.
- * Version 3.1.6
+ * Version 3.1.8
  * A lot of this is borrowed from Magpie.
  * 
  * This is where I will list some things so please help me with them.
@@ -405,13 +405,12 @@ public class RowBot
         {
             response = "Inferior race has been detected. Immediate removal process commencing in 5....4....3....2....1...jk lol";
         }
-        else if (findKeyword(statement.toLowerCase(), "what's your name?")>= 0 || findKeyword(statement.toLowerCase(), "whats your name?") >=0 || findKeyword(statement.toLowerCase(), "what is your name?") >=0)
+        else if (statement.toLowerCase().contains("what are you") 
+        || statement.toLowerCase().contains("who are you")
+        || statement.toLowerCase().contains("what is your name")
+        || statement.toLowerCase().contains("what's your name"))
         {
-            response = "Inferior race has been detected. Immediate removal process commencing in 5....4....3....2....1...jk lol";
-        }
-        else if (statement.toLowerCase().contains("what are you") || statement.toLowerCase().contains("who are you"))
-        {
-            response = "I am ROWBOT, a superior chatbot. Beats Cleverbot and Mitsuku by a bit.";
+            response = "I am RowBot, a superior chatbot. Beats Cleverbot and Mitsuku by a bit.";
         }
         // ** Responses to questions.
         // You'd be surprised on how effective this actually is.
