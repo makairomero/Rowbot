@@ -393,6 +393,10 @@ public class RowBot
         {
             response = "Imagine that you have zero cookies and you split them evenly among zero friends. How many cookies does each person get? See? It doesn't make sense. And Cookie Monster is sad that there are no cookies, and you are saw that you have no friends.";
         }
+        else if (findKeyword(statement.toLowerCase(), "comrade") >= 0 || findKeyword(statement.toLowerCase(), "buddy") >=0)
+        {
+            response = "My name is Rowbot";
+        }
         else if (findKeyword(statement.toLowerCase(), "anime") >= 0) // I don't really know why I added this.
         {
             response = "Tell me about your favorite anime. :D";
