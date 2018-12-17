@@ -1,7 +1,7 @@
 /**
  * ROWBOT
  * Designed by Makai, Evan, Damien, and Toby.
- * Version 3.2
+ * Version 3.2.3
  * A lot of this is borrowed from Magpie.
  * 
  * This is where I will list some things so please help me with them.
@@ -9,7 +9,9 @@
  * TO-DO LIST
  * How about a little trivia?
  */
-import java.util.concurrent.TimeUnit;
+
+//import java.util.concurrent.TimeUnit;
+
 public class RowBot
 {
     int endpoint, startpoint, newend ;
@@ -294,7 +296,6 @@ public class RowBot
         // Bomb
         else if (findKeyword(statement.toLowerCase(), "bomb") >= 0)
         {
-            //response = "Did you say bomb?";
             Bomb boom = new Bomb();
             boom.UnleashBomb(); // Unleash the bomb.
         }
