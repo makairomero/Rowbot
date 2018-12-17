@@ -14,7 +14,7 @@ public class RowBotRunner
         Scanner in = new Scanner (System.in);
         String statement = in.nextLine();
         String same = "asdasda";
-        Bomb boom = new Bomb();
+        //Bomb boom = new Bomb();
         while(a == 0){
 
             if  (statement.equals("Bye"))
