@@ -1,7 +1,7 @@
 /**
  * ROWBOT
  * Designed by Makai, Evan, Damien, and Toby.
- * Version 3.2.5
+ * Version 3.2.6
  * A lot of this is borrowed from Magpie.
  * 
  * This is where I will list some things so please help me with them.
@@ -263,7 +263,7 @@ public class RowBot
         }
 
         // Bomb
-        else if (statement.contains("bomb") || statement.contains("nuke"))
+        else if (statement.toLowerCase().contains("bomb") || statement.toLowerCase().contains("nuke"))
         {
             Bomb boom = new Bomb();
             boom.UnleashBomb(); // Unleash the bomb.
