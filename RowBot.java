@@ -954,7 +954,7 @@ public class RowBot
     
     private String getRandomResponse()
     {
-        final int NUMBER_OF_RESPONSES = 6;
+        final int NUMBER_OF_RESPONSES = 7;
         double r = Math.random();
         int whichResponse = (int)(r * NUMBER_OF_RESPONSES);
         String response = "";
@@ -982,6 +982,10 @@ public class RowBot
         else if (whichResponse == 5)
         {
             response = "I would never know or care but thanks.";
+        }
+        else if (whichResponse == 6)
+        {
+            response = "please put a response here i'm all out of ideas";
         }
         return response;
     }
