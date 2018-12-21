@@ -1,7 +1,7 @@
 /**
  * ROWBOT
  * Designed by Makai, Evan, Damien, and Toby.
- * Version 3.2.6
+ * Version 3.2.7
  * A lot of this is borrowed from Magpie.
  * 
  * This is where I will list some things so please help me with them.
