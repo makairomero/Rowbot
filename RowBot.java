@@ -1,7 +1,7 @@
 /**
  * ROWBOT
  * Designed by Makai, Evan, Damien, and Toby.
- * Version 3.2.8
+ * Version 3.2.9
  * A lot of this is borrowed from Magpie.
  * 
  * This is where I will list some things so please help me with them.
@@ -339,9 +339,8 @@ public class RowBot
         // This is where we would add the crude words but I am not sure if we should. We want it to be intelligent, but this part of it is the most aggressive.
         // I'm questioning on whether or not we should keep this.
         else if (findKeyword(statement.toLowerCase(), "screw") >= 0
-        || findKeyword(statement.toLowerCase(), "suck") >= 0
-        || findKeyword(statement.toLowerCase(), "fuck") >= 0 // This one is highly offensive.
-        || findKeyword(statement.toLowerCase(), "ass") >= 0)
+        || findKeyword(statement.toLowerCase(), "suck") >= 0)
+        // Removed the very rude responses. Sorry.
         {
             final int x = 6;
             double rndNum = Math.random();
