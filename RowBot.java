@@ -6,8 +6,10 @@
  * 
  * This is where I will list some things so please help me with them.
  * 
- * TO-DO LIST
+ * IDEA LIST
  * How about a little trivia?
+ * Bomb Cooldown
+ * Dispatch
  */
 
 //import java.util.concurrent.TimeUnit;
