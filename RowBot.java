@@ -26,8 +26,12 @@ public class RowBot
         int getRandom = (int)(rndNum * x);
         String greeting = "greeting_text"; // Don't worry. As long as this method works correctly, this should never show.
         // Here I decided to change up the greeting so it's not always the same one. Feel free to modify it however you like. 
-
-        if (getRandom == 0){
+        final int y = 100;
+        int creepy = (int)(rndNum * y);
+        
+        if (creepy == 66){
+            greeting = "Hello user. Welcome to your worst nightmare >:)"; // This has a 1% chance of happening.
+        }else if (getRandom == 0){
             greeting = "Hello I am Rowbot, let's talk.";
         }else if (getRandom == 1){
             greeting =  "Hey!I am Rowbot.";
